@@ -59,15 +59,15 @@ function playGame() {
 
     if (humanScore > computerScore) 
     {
-        return console.log("You win!");
+        return console.log("You win the game!");
     }
     else if (computerScore > humanScore)
     {
-        return console.log("You lose!")
+        return console.log("You lose the game!")
     }
 
     // In the off chance you get a tie.
-    return console.log("it's a tie!")
+    return console.log("the game is a tie!")
 }
 
 playGame();
