@@ -1,5 +1,4 @@
-
-
+// Variables that will be used to return from functions.
 const ROCK = "rock";
 const PAPER = "paper";
 const SCISSORS = "scissors";
@@ -16,4 +15,8 @@ function getComputerChoice() {
     return result
 }
 
-getComputerChoice();
+// Gets the human choice
+function getHumanChoice() {
+    let humanChoice = prompt("Choose either, Rock, Paper or Scissors");
+    return humanChoice.toLowerCase();
+}
