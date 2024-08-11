@@ -48,6 +48,26 @@ function playRound(HumanChoice, ComputerChoice) {
     return console.log("Its a tie!");
 }
 
-let computerTest = getComputerChoice();
-let humanTest = getHumanChoice();
-playRound(humanTest, computerTest);
+// Loops playRound five times, then determines the winner.
+function playGame() {
+    for (let i = 0; i < 5; i++)
+    {
+        computer = getComputerChoice();
+        human = getHumanChoice();
+        playRound(human, computer);
+    }
+
+    if (humanScore > computerScore) 
+    {
+        return console.log("You win!");
+    }
+    else if (computerScore > humanScore)
+    {
+        return console.log("You lose!")
+    }
+
+    // In the off chance you get a tie.
+    return console.log("it's a tie!")
+}
+
+playGame();
