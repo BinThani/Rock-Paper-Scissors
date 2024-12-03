@@ -10,22 +10,21 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #00b4d8;
+    background-color: linear-gradient(to bottom, #e3f2fd, #bbdefb);;
 }
 
 .container {
     width: 600px;
     height: 350px;
-    background-color: #caf9f8;
+    background-color: #e5ebf1;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .container-title {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
-    color: #683E5C;
-    border: 2px solid black;
+    color: #4a4a4a;
     text-align: center;
     margin: 10px;
     font-weight: bolder;
@@ -36,12 +35,11 @@ body {
     margin: 10px;
     gap: 20px;
     justify-content: space-between;
-    border: 2px solid black;
 }
 
 .button-style {
     padding: 50px 40px;
-    background-color: #62bebe;
+    background-color: #e0f7fa;
     font-size: 3rem;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
     border-radius: 10px;   
@@ -49,7 +47,6 @@ body {
 
 .button-group-reset {
     display: flex;
-    border: 2px solid black;
     justify-content: center;
 }
 
@@ -67,10 +64,15 @@ button:hover {
 .player-group {
     display: flex;
     margin: 10px 0px;
-    border: 2px solid black;
     justify-content: space-around;
 }
 
 .playerComputer, .playerAI {
     font-size: 24px;
+}
+
+.result {
+    display: flex;
+    margin: 10px 0px;
+    justify-content: center;
 }
