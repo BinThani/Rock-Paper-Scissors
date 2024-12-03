@@ -70,4 +70,4 @@ function playGame() {
     return console.log("the game is a tie!")
 }
 
-playGame();
+// playgame();

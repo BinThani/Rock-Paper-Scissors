@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body is a flex container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #00b4d8;
+}
+
+.container {
+    width: 600px;
+    height: 350px;
+    background-color: #caf9f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #683E5C;
+    border: 2px solid black;
+    text-align: center;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+.button-group {
+    display: flex;
+    margin: 10px;
+    gap: 20px;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+.button-style {
+    padding: 50px 40px;
+    background-color: #62bebe;
+    font-size: 3rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    border-radius: 10px;   
+}
+
+.button-group-reset {
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+}
+
+.button-reset {
+    padding: 8px 15px;
+    font-size: large;
+    border-radius: 5px;   
+}
+
+button:hover {
+    background-color: #0077b6; /* Change to a darker blue on hover */
+    color: white; /* Change text/icon color to white */
+}
+
+.player-group {
+    display: flex;
+    margin: 10px 0px;
+    border: 2px solid black;
+    justify-content: space-around;
+}
+
+.playerComputer, .playerAI {
+    font-size: 24px;
+}
